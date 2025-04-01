@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workshop - Pushing the boundaries</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('assets/header-atlanta.jpg') center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 1rem 0;
+      color: #e0e0e0;
+    }
+    .info {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .nav-buttons {
+      margin-top: 2rem;
+    }
+    .nav-buttons a {
+      display: inline-block;
+      background-color: #af0b44;
+      color: white;
+      padding: 0.6rem 1.4rem;
+      margin: 0.4rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #d14064;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h3, section h2 {
+      font-size: 2rem;
+      color: #af0b44;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .speakers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .speaker-card {
+      background-color: #f9f9f9;
+      padding: 1.2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 2px solid #417393;
+      display: block;
+      text-decoration: none;
+      color: inherit; /* Keeps the text color the same */
+      cursor: pointer;
+;
+    }
+    .speaker-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      opacity: 0.9; /* Optional hover effect */
+    }
+    .speaker-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .speaker-card strong {
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .speaker-card em {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .banner {
+  width: 100%;
+  height: auto;
+  max-height: 50;
+  display: block;
+  margin: 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <img src="assets/banner.png" alt="Workshop Banner" class="banner">
+
+  <header>
+    <h1>Pushing the boundaries</h1>
+    <h2>Safe and intelligent medical robotics</h2>
+    <div class="info">📅 May 14, 2025 &nbsp;|&nbsp; 📍 Kendeda Building, Georgia Tech, Atlanta</div>
+    <div class="info">2025 International Symposium on Medical Robotics</div>
+    <div class="nav-buttons">
+      <a href="#about">About</a>
+      <a href="#submissions">Call for Abstracts</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#program">Program</a>
+    </div>
+  </header>
+
+  <section id="about" style="text-align: justify;">
+    <h3>About</h3>
+    <p><strong>Medical robotics</strong> has a wide range of applications, from surgical to assistive and rehabilitation robotics, and draws on multiple disciplines like mechanics, haptics, computer vision, Artificial Intelligence (AI), and control. As medical robotics have become more and more tangible, the scientific community has worked to solve critical challenges and ensure that medical robots are safe, responsive, and remain stable and useful in medical practice.</p>
+
+    <p>Two main paradigms have emerged for the control of medical robots: <strong>Model-Based</strong> and <strong>AI Control Algorithms</strong>. Model-based controllers comprise well-established traditional and new advanced control methods to ensure robustness, safety, and reliability. AI-based methods benefit from the possibility of collecting large quantities of real and/or simulation data and using modern computation power resources to learn the desired behaviour. These methods have shown promise in redefining control design and pushing the boundaries of what is achievable in modern robotics.</p>
+  
+    <p>Although data-driven techniques are becoming very popular, the knowledge of the model for a robotic system is still essential to handle the system's physics and mechanics and, ultimately, its behaviour. On top of that, <strong>learning safe human-robot interaction</strong> is crucial to shaping the <em>physical intelligence</em> of next-generation medical robots. The great contemporary challenge of robot control is to synergistically complement model-based control strategies with AI-based approaches for achieving intelligent, precise, and reliable control and decision-making of medical robotic systems.</p>
+  
+    <p>This workshop aims to provide a comprehensive overview of state-of-the-art technologies, solutions from both approaches and open challenges. It will bring together experts, researchers, and practitioners to discuss the latest advancements in these fields and encourage dialogue and collaborative discussions, culminating in a panel at the end of the workshop. The workshop will provide a platform for discussing the strengths and weaknesses of these approaches, identifying potential knowledge gaps, and exploring opportunities for merging the benefits of these approaches.</p>
+  </section>
+
+  <section id="submissions">
+    <h3>Call for Abstracts</h3>
+    <p> We invite potential participants to submit a 1-page PDF abstract related to the workshop topic via email to Raffaella Mancino (raffaella.mancino@edu.unige.it).</p>
+       Accepted authors will have the opportunity to present their work in a poster session.</p>
+    <p><strong>Important Dates</strong></p> 
+    <p>Abstract Submission Deadline: April 24, 2025  </p> 
+    <p>Notification of Acceptance: Within 5 days of submission </p> 
+  </section>
+  
+
+
+  <section id="organizers">
+    <h3>Organizers</h3>
+    <div class="organizers">
+      <a href="https://prisma.dieti.unina.it/index.php/people/ph-d-students" target="_blank" class="organizer-card">
+        <img src="assets/organizers/mancino.jpg" alt="Raffaella Mancino" style="object-position: 50% 30%;">
+        <div>
+          <strong>Raffaella Mancino</strong>
+          <em>Università degli Studi di Genova<br> Università degli Studi di Napoli Federico II</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">raffaella.mancino@edu.unige.it</span></em>
+        </div>
+      </a>
+
+      <a href="http://wpage.unina.it/cristina.iacono/" target="_blank" class="organizer-card">
+        <img src="assets/organizers/iacono.jpg" alt="Cristina Iacono">
+        <div>
+          <strong>Cristina Iacono</strong>
+          <em>Università degli Studi di Napoli Federico II</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">cristina.iacono@unina.it</span></em>
+        </div>
+      </a>
+      
+      <a href="https://prisma.dieti.unina.it/index.php/people/ph-d-students" target="_blank" class="organizer-card">
+        <img src="assets/organizers/smaldone.jpg" alt="Aldo Smaldone">
+        <div>
+          <strong>Aldo Smaldone</strong>
+          <em>Università degli Studi di Napoli Federico II</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">aldo.smaldone@unina.it</span></em>
+
+        </div>
+      </a>
+      <a href="https://www.lorenzomasia.com/lab-and-people" target="_blank" class="organizer-card">
+        <img src="assets/organizers/tricomi.jpeg" alt="Enrica Tricomi">
+        <div>
+          <strong>Enrica Tricomi</strong>
+          <em>University of Heidelberg</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">enrica.tricomi@ziti.uni-heidelberg.de</span></em>
+        </div>
+      </a>
+      <a href="https://www.ce.cit.tum.de/nhcr/members/cpiazza/" target="_blank" class="organizer-card">
+        <img src="assets/organizers/piazza.jpg" alt="Cristina Piazza">
+        <div>
+          <strong>Cristina Piazza</strong>
+          <em>Technical University of Munich</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">cristina.piazza@tum.de</span></em>
+        </div>
+      </a>
+      <a href="http://wpage.unina.it/fanny.ficuciello/" target="_blank" class="organizer-card">
+        <img src="assets/organizers/ficuciello.png" alt="Fanny Ficuciello">
+        <div>
+          <strong>Fanny Ficuciello</strong>
+          <em>Università degli Studi di Napoli Federico II</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">fanny.ficuciello@unina.it</span></em>
+        </div>
+      </a>
+      <a href="https://www.dime.unige.it/giovanni.berselli%40unige.it" target="_blank" class="organizer-card">
+        <img src="assets/organizers/berselli.jpg" alt="Giovanni Berselli">
+        <div>
+          <strong>Giovanni Berselli</strong>
+          <em>Università degli Studi di Genova<br>Istituto Italiano di Tecnologia</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">giovanni.berselli@unige.it</span></em>
+
+        </div>
+      </a>
+      <a href="https://www.lorenzomasia.com/" target="_blank" class="organizer-card">
+        <img src="assets/organizers/masia.jpeg" alt="Lorenzo Masia">
+        <div>
+          <strong>Lorenzo Masia</strong>
+          <em>Technical University of Munich</em>
+          <em><span style="font-size: 0.9em; font-style: italic;">lorenzo.masia@tum.de</span></em>
+
+        </div>
+      </a>
+    </div>
+  </section>
+  
+  <style>
+  .organizers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  .organizer-card {
+    background-color: #f9f9f9;
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid #417393;
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Keeps the text color the same */
+    cursor: pointer;
+    ;
+  }
+  .organizer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .organizer-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  .organizer-card strong {
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .organizer-card em {
+    font-size: 0.95rem;
+    color: #555;
+    display: block;
+    font-style: italic;
+  }
+  </style>
+
+<section id="speakers">
+  <h3>Speakers</h3>
+  <div class="speakers">
+      <a href="https://profiles.stanford.edu/alaa-eldin-abdelaal" target="_blank" class="speaker-card">
+          <img src="assets/speakers/abdelaal.jpg" alt="Alaa Eldin Abdelaal">
+          <strong>Alaa Eldin Abdelaal</strong>
+          Stanford University
+          <em>Towards Force-Aware Autonomous Robotic Surgery</em>
+      </a>
+      <a href="https://robotics.leeds.ac.uk/profiles/michael-brockdorff/" target="_blank" class="speaker-card">
+          <img src="assets/speakers/brockdorff.jpg" alt="Michael Brockdorff" style="object-position: 0 -10px;">
+          <strong>Michael Brockdorff</strong>
+          University of Oxford
+          <em>Soft magnetic surgical robots for cancer-related applications</em>
+      </a>
+      <a href="https://people.utwente.nl/g.dagnino" target="_blank" class="speaker-card">
+          <img src="assets/speakers/dagnino.jpg" alt="Giulio Dagnino">
+          <strong>Giulio Dagnino</strong>
+          University of Twente
+          <em>Intelligent and MRI-Compatible Endovascular Robotics</em>
+      </a>
+      <a href="https://cse.umn.edu/me/rachel-gehlhar-humann" target="_blank" class="speaker-card">
+          <img src="assets/speakers/humann.jpg" alt="Rachel Gehlhar Humann">
+          <strong>Rachel Gehlhar Humann</strong>
+          University of Minnesota
+          <em>Model-Based Lower-Limb Prosthesis Control Methods</em>
+      </a>
+      <a href="https://fedemasi.wordpress.com/" target="_blank" class="speaker-card">
+          <img src="assets/speakers/masiero.jpg" alt="Federico Masiero">
+          <strong>Federico Masiero</strong>
+          Technical University of Munich
+          <em>Giving a Magnetic Taste to Robotics</em>
+      </a>
+      <a href="https://www.santannapisa.it/it/michele-francesco-penna" target="_blank" class="speaker-card">
+          <img src="assets/speakers/penna.jpg" alt="Michele Francesco Penna">
+          <strong>Michele Francesco Penna</strong>
+          Scuola Superiore Sant'Anna
+          <em>High-level Controllers for Rehabilitative Exoskeletons</em>
+      </a>
+      <a href="https://giovannipittiglio.github.io/" target="_blank" class="speaker-card">
+          <img src="assets/speakers/pittiglio.jpg" alt="Giovanni Pittiglio">
+          <strong>Giovanni Pittiglio</strong>
+          Worcester Polytechnic Institute
+          <em>Contact-Aware Autonomous Medical Robots</em>
+      </a>
+  </div>
+</section>
+
+  <section id="program">
+    <h3>Program</h3>
+    <div style="max-width: 900px; margin: 0 auto;">
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="background-color: #f5f5f5; text-align: left;">
+
+
+            <th style="padding: 12px; font-size: 1.1rem; border-bottom: 2px solid #417393;">Time</th>
+            <th style="padding: 12px; font-size: 1.1rem; border-bottom: 2px solid #417393;">Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding: 12px;"><strong>08:30 – 08:40</strong></td><td style="padding: 12px;">🗣️ Welcome Introduction</td></tr>
+          <tr><td style="padding: 12px;"><strong>08:40 – 09:00</strong></td><td style="padding: 12px;">🎤 Towards Force-Aware Autonomous Robotic Surgery - Alaa Eldin Abdelaal </td></tr>
+          <tr><td style="padding: 12px;"><strong>09:00 – 09:20</strong></td><td style="padding: 12px;">🎤 Soft magnetic surgical robots for cancer-related applications - Michael Brockdorff </td></tr>
+          <tr><td style="padding: 12px;"><strong>09:20 – 09:40</strong></td><td style="padding: 12px;">🎤 Model-Based Lower-Limb Prosthesis Control Methods - Rachel Gehlhar Humann </td></tr>
+          <tr><td style="padding: 12px;"><strong>09:40 – 10:00</strong></td><td style="padding: 12px;">🎤 High-level Controllers for Rehabilitative Exoskeletons - Michele Francesco Penna </td></tr>
+          <tr><td style="padding: 12px;"><strong>10:00 – 10:30</strong></td><td style="padding: 12px;">☕ Coffee Break</td></tr>
+          <tr><td style="padding: 12px;"><strong>10:30 – 10:50</strong></td><td style="padding: 12px;">🎤 Intelligent and MRI-Compatible Endovascular Robotics - Giulio Dagnino </td></tr>
+          <tr><td style="padding: 12px;"><strong>10:50 – 11:10</strong></td><td style="padding: 12px;">🎤 Contact-Aware Autonomous Medical Robots - Giovanni Pittiglio </td></tr>
+          <tr><td style="padding: 12px;"><strong>11:10 – 11:30</strong></td><td style="padding: 12px;">🎤 Giving a Magnetic Taste to Robotics - Federico Masiero </td></tr>
+          <tr><td style="padding: 12px;"><strong>11:30 – 12:00</strong></td><td style="padding: 12px;">📋 Poster Teaser</td></tr>
+          <tr><td style="padding: 12px;"><strong>12:00 – 12:15</strong></td><td style="padding: 12px;">💬 Final Remarks</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <footer style="padding: 2rem 1rem;">
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+      <img src="assets/loghi/uninalogo.jpg" alt="UNINA" style="height: 80px; object-fit: contain;">
+      <img src="assets/loghi/b2r.png" alt="B2R" style="height: 80px; object-fit: contain;">
+      <img src="assets/loghi/icaros.png" alt="ICAROS" style="height: 80px; object-fit: contain;">
+      <img src="assets/loghi/prisma.png" alt="PRISMA Lab" style="width: 80px; object-fit: contain;">
+      <img src="assets/loghi/iit.png" alt="IIT" style="width: 80px; object-fit: contain;">
+      <img src="assets/loghi/tum.png" alt="TUM" style="width: 80px; object-fit: contain;">
+      <img src="assets/loghi/mirmi.webp" alt="MIRMI" style="width: 80px; object-fit: contain;">
+      <img src="assets/loghi/unige.png" alt="UNIGE" style="width: 80px; object-fit: contain;">
+     
+    </div>
+  </footer>
+  
+  
+</body>
+</html>
